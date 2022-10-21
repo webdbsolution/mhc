@@ -1,0 +1,541 @@
+@import url(../fonts/stylesheet.css);
+
+body {
+  margin: 0;
+}
+
+
+h2 {
+  font-family: "Metropolis";
+  font-weight: 100;
+  margin-top: 6%;
+}
+
+h1 {
+  font-family: "Metropolis";
+  font-weight: 300;
+}
+
+p,
+a {
+  font-family: "Metropolis";
+  text-align: justify;
+  line-height: 1.8;
+}
+
+.bg-video {
+  width: 100%;
+  height: 45vw;
+  object-fit: cover;
+  position: absolute;
+  z-index: -100;
+  background: url(../img/Camada\ 30.png) no-repeat center;
+  background-size: cover;
+}
+
+.logo {
+  padding: 5%;
+  z-index: 110;
+}
+
+.menu {
+  float: right;
+  cursor: pointer;
+}
+
+.menu-list {
+  visibility: hidden;
+  position: absolute;
+  width: 100%;
+  background-color: #203745c5;
+  z-index: 100;
+  margin: 0;
+  color: rgba(255, 255, 255, 0.74);
+  padding: 3% 0 0 0;
+}
+
+.exit {
+  cursor: pointer;
+}
+
+.active {
+  visibility: visible;
+}
+
+.remove {
+  visibility: hidden;
+}
+
+.menu-list div {
+  display: flex;
+  padding-left: 6%;
+}
+
+.menu-list div h1 {
+  padding-left: 65.5%;
+}
+
+.menu-list p {
+  margin-block: 2%;
+}
+
+.menu-list p a {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.74);
+}
+
+.sombra {
+  position: absolute;
+  z-index: -1;
+  width: 70%;
+}
+
+.about {
+  padding: 10%;
+  padding-block: 5%;
+  padding-bottom: 7%;
+  background-color: #fff;
+  box-shadow: 0px 3px 7px 0px rgba(0, 0, 0, 0.35);
+}
+
+.about p {
+  text-align: justify;
+}
+
+.services {
+  background-image: url(../img/Camada\ 11\ copiar.png);
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.services {
+  color: #fff;
+}
+
+.bg {
+  width: 100%;
+  background-color: #203745b3;
+}
+
+.services h1 {
+  padding: 10% 10% 1%;
+}
+
+.direitos p {
+  padding-block: 3%;
+  cursor: pointer;
+}
+
+.selected {
+  background-color: #ca9811;
+  color: #000;
+  width: 60%;
+}
+
+.text h1 {
+  color: #ca9811;
+  margin: 0;
+  padding: 0;
+}
+
+.we {
+  padding-block: 6%;
+}
+
+.we h1 {
+  font-size: 2em;
+  border: 1px solid #ca9811;
+  text-align: end;
+  padding: 1% 4% 1% 0%;
+  color: #203745;
+}
+
+.partners {
+  border: 1px solid #ca9811;
+  margin: 10% 5%;
+}
+
+.people {
+  width: 90%;
+  margin: auto;
+  padding-top: 3%;
+  margin-top: -10%;
+  padding-bottom: 8%;
+}
+
+.people div h1 {
+  font-size: 1em;
+  border: none;
+  width: 100%;
+  font-weight: 600;
+  margin: 0;
+}
+
+.people div p {
+  font-size: 0.8em;
+  padding: 0;
+  margin: 0;
+}
+
+.pessoa {
+  width: 80%;
+  margin: auto;
+}
+
+.pessoa a {
+  color: #000;
+  text-decoration: none;
+}
+
+.pessoa h1,
+.pessoa p {
+  text-align: center;
+}
+
+.notices {
+  background-image: url(../img/Camada\ 19.png);
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  z-index: -20;
+}
+
+.box {
+  display: flex;
+  background-color: rgba(255, 255, 255, 0.885);
+  width: 80%;
+  padding: 4%;
+  margin: auto;
+  justify-content: space-between;
+}
+
+.notice {
+  margin: 6% 3%;
+  width: 100%;
+}
+
+.notice h1 {
+  font-size: 1.3em;
+  font-weight: 600;
+  margin: 0;
+  padding: 6%;
+}
+
+.notice p {
+  padding: 0;
+  margin: 0;
+  width: 80%;
+  padding: 6%;
+}
+
+.forma3 {
+  width: 80%;
+  height: 1px;
+  float: right;
+  margin: 4% 0;
+}
+
+.forma4 {
+  height: 1px;
+  width: 80%;
+  margin: 4% 0;
+}
+
+.sombra2 {
+  position: absolute;
+  z-index: -1;
+  width: 90%;
+}
+
+footer {
+  background-color: #203745;
+  color: #fff;
+  margin-top: 10vh;
+  padding: 10% 0;
+}
+
+.icon {
+  position: fixed;
+  right: 0%;
+  bottom: 0%;
+}
+
+.icon a img {
+  width: 100%;
+}
+
+@media (max-width: 900px) {
+  .logo {
+    width: 25%;
+  }
+
+  .menu {
+    width: 6%;
+    padding: 6%;
+  }
+
+  h2 {
+    font-size: 1.3em;
+    text-align: center;
+  }
+
+  p {
+    font-size: 0.9em;
+  }
+
+  .menu-list {
+    padding-bottom: 4%;
+  }
+
+  .menu-list div img {
+    display: none;
+  }
+
+  .menu-list p {
+    margin: 2% auto;
+    text-align: center;
+    width: 100%;
+  }
+
+  .exit {
+    margin: auto;
+  }
+
+  .about {
+    margin-top: 15%;
+    margin-inline: 5%;
+  }
+
+  .forma1,
+  .forma2 {
+    display: none;
+  }
+
+  .direitos {
+    display: flex;
+    width: 100%;
+  }
+
+  .direitos p {
+    border: 1px solid #ca9811;
+    width: 25%;
+    padding-inline: 3%;
+    text-align: center;
+  }
+
+  .text {
+    width: 80%;
+    padding: 0 10% 10% 10%;
+  }
+
+  .we h1 {
+    width: 60%;
+  }
+
+  .we p {
+    padding-inline: 10%;
+  }
+
+  .loc div h1 {
+    font-size: 1.5em;
+  }
+
+  .local h2 {
+    font-size: 0.8em;
+  }
+
+  .onde {
+    width: 90%;
+    margin: auto;
+    text-align: center;
+  }
+
+  .redes {
+    width: 40%;
+  }
+
+  .loc div h1 {
+    border: 1px solid #ca9811;
+    text-align: center;
+    width: 100%;
+  }
+
+  .local {
+    margin-top: 5%;
+    width: 100%;
+    text-align: center;
+  }
+
+  .local h2 {
+    width: 100%;
+    font-weight: 600;
+  }
+
+  .local p {
+    text-align: center;
+    line-height: 1em;
+  }
+
+  .loc-img {
+    width: 15%;
+    display: none;
+  }
+
+  .icon {
+    width: 12%;
+  }
+}
+
+@media (min-width: 950px) {
+  .logo {
+    width: 18vw;
+  }
+
+  .menu {
+    width: 3vw;
+    padding: 5%;
+  }
+
+  h2 {
+    font-size: 2.5em;
+  }
+
+  p,
+  a {
+    font-weight: 300;
+  }
+
+  .exit {
+    font-size: 3em;
+  }
+
+  .menu-list div img {
+    width: 18%;
+  }
+
+  .menu-list p {
+    padding: 1%;
+    padding-left: 6%;
+    margin-block: 2%;
+    border: 1px solid #ffffff00;
+  }
+
+  .menu-list p:hover {
+    border: 1px solid #ca9811;
+  }
+
+
+  .about {
+    margin-top: 18.5%;
+    margin-inline: 5%;
+  }
+
+  .forma1 {
+    width: 83%;
+    margin-right: -21%;
+    float: right;
+  }
+
+  .forma2 {
+    width: 83%;
+    margin-inline: -33%;
+    float: left;
+    margin-top: 6%;
+  }
+
+  .types {
+    display: flex;
+    padding-bottom: 6%;
+  }
+
+  .direitos {
+    width: 40%;
+  }
+
+  .direitos p {
+    border: 1px solid #ca9811;
+    padding-inline: 25%;
+    font-size: 1.7em;
+    text-align: start;
+  }
+
+  .text {
+    width: 40%;
+    padding-inline: 10%;
+  }
+
+  .text p {
+    font-size: 1em;
+  }
+
+  .we h1 {
+    width: 35%;
+  }
+
+  .we p {
+    padding: 0 17% 0 20%;
+  }
+
+  #notices .owl-item:nth-child(2) {
+    box-sizing: border-box;
+    border-inline: 1px solid #ca9811;
+  }
+
+  .loc {
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  .loc div h1 {
+    border: 1px solid #ca9811;
+    font-size: 2em;
+    text-align: end;
+    width: 100%;
+    padding: 3% 5% 1% 0%;
+    float: left;
+  }
+
+  .local {
+    padding: 2% 4%;
+    width: 25%;
+  }
+
+  .local:nth-child(3) {
+    border-left: 1px solid #ca9811;
+  }
+
+  .local h2 {
+    width: 100%;
+    font-size: 1em;
+    font-weight: 600;
+  }
+
+  .local p {
+    margin-top: 10%;
+    font-size: 0.9em;
+    line-height: 1.8;
+  }
+
+  .loc-img {
+    width: 12%;
+  }
+
+  .redes {
+    width: 40%;
+    margin: 6%;
+    float: right;
+  }
+
+  .onde {
+    width: 30%;
+    margin: 0 5% 0 0;
+  }
+
+  .icon {
+    width: 3%;
+  }
+}
+
