@@ -176,7 +176,7 @@ $('#team').owlCarousel({
 
 $('#notices').owlCarousel({
     loop: true,
-    nav: false,
+    nav: true,
     margin: 10,
     responsiveClass: true,
     responsive: {

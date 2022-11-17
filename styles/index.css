@@ -552,3 +552,36 @@ footer {
   }
 }
 
+#notices .owl-dots{
+	display: none !important;
+}
+
+#notices .owl-prev{
+	float: left;
+	position: absolute;
+	background-image:url(../img/slices/left_.png);
+	margin-left: -60%;
+}
+
+#notices .owl-next{
+	float: right;
+	position: relative;
+	background-image:url(../img/slices/right_.png);
+	margin-right: -10%;
+}
+
+#notices .owl-next, #notices .owl-prev{
+	width: 50px;
+	height: 80px;
+	outline:none !important;
+	margin-top: -300px;
+	background-size:contain;
+	background-position:center;
+	background-repeat:no-repeat;
+	z-index: 3;
+	background-color:transparent;
+}
+
+#notices .owl-prev span, #notices .owl-next span{
+	display: none;
+}
