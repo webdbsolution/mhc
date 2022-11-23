@@ -1,4 +1,6 @@
-const public = document.querySelector(".dPublico");
+import { areas } from "../mocks/mocks.js"
+
+const publico = document.querySelector(".dPublico");
 const eleitoral = document.querySelector(".dEleitoral");
 const trabalho = document.querySelector(".dTrabalho");
 const penal = document.querySelector(".dPenal");
@@ -11,6 +13,16 @@ const exit = document.querySelector(".exit");
 
 const links = document.querySelectorAll(".link");
 
+function criaDescricao(titulo) {
+    let notices = [document.createElement("h1"), document.createElement("p")]
+
+    notices[0].innerHTML = areas[areas.findIndex(u => u.titulo == titulo)].titulo;
+    notices[1].innerHTML = areas[areas.findIndex(u => u.titulo == titulo)].conteudo;
+    
+    notices.map((notice) => {
+        text.appendChild(notice);
+    })
+}
 
 text.innerHTML = "";
 
@@ -18,111 +30,57 @@ if (eleitoral.classList.contains("selected")) eleitoral.classList.remove("select
 if (trabalho.classList.contains("selected")) trabalho.classList.remove("selected")
 if (penal.classList.contains("selected")) penal.classList.remove("selected")
 
-public.classList.add("selected")
+publico.classList.add("selected")
 
-let notices = [document.createElement("h1"), document.createElement("p"), document.createElement("p"), document.createElement("p"), document.createElement("p")]
+criaDescricao("Direito Público");
 
-notices[0].innerHTML = "Direito Público";
-notices[1].innerHTML = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, id sapiente laudantium quo iusto maxime facere! Sapiente sunt facilis consectetur sequi, dolorum molestiae illum pariatur cumque. Corrupti saepe distinctio modi.";
-notices[2].innerHTML = "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro minima similique tempora. Totam, similique doloremque? Tenetur, quibusdam ratione! Dolore nesciunt iste quos labore maxime sequi omnis blanditiis hic iusto laborum!";
-notices[3].innerHTML = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint repellat nobis adipisci earum recusandae iure possimus porro. Possimus quod illum voluptates, vel minima dolore, error quia dolor enim necessitatibus ipsa?";
-notices[4].innerHTML = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero omnis maxime labore libero autem aperiam necessitatibus alias expedita blanditiis nemo voluptas nisi doloribus atque, esse saepe repellendus quae quia molestias.";
-
-notices.map((notice) => {
-    text.appendChild(notice);
-})
-
-public.addEventListener("click", (e) => {
+publico.addEventListener("click", (e) => {
     text.innerHTML = "";
 
     if (eleitoral.classList.contains("selected")) eleitoral.classList.remove("selected")
     if (trabalho.classList.contains("selected")) trabalho.classList.remove("selected")
     if (penal.classList.contains("selected")) penal.classList.remove("selected")
 
-    public.classList.add("selected")
+    publico.classList.add("selected")
 
-    let notices = [document.createElement("h1"), document.createElement("p"), document.createElement("p"), document.createElement("p"), document.createElement("p")]
-
-    notices[0].innerHTML = "Direito Público";
-    notices[1].innerHTML = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, id sapiente laudantium quo iusto maxime facere! Sapiente sunt facilis consectetur sequi, dolorum molestiae illum pariatur cumque. Corrupti saepe distinctio modi.";
-    notices[2].innerHTML = "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro minima similique tempora. Totam, similique doloremque? Tenetur, quibusdam ratione! Dolore nesciunt iste quos labore maxime sequi omnis blanditiis hic iusto laborum!";
-    notices[3].innerHTML = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint repellat nobis adipisci earum recusandae iure possimus porro. Possimus quod illum voluptates, vel minima dolore, error quia dolor enim necessitatibus ipsa?";
-    notices[4].innerHTML = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero omnis maxime labore libero autem aperiam necessitatibus alias expedita blanditiis nemo voluptas nisi doloribus atque, esse saepe repellendus quae quia molestias.";
-
-    notices.map((notice) => {
-        text.appendChild(notice);
-    })
+    criaDescricao("Direito Público");
 })
 
 eleitoral.addEventListener("click", (e) => {
     text.innerHTML = "";
 
-    if (public.classList.contains("selected")) public.classList.remove("selected")
+    if (publico.classList.contains("selected")) publico.classList.remove("selected")
     if (trabalho.classList.contains("selected")) trabalho.classList.remove("selected")
     if (penal.classList.contains("selected")) penal.classList.remove("selected")
 
     eleitoral.classList.add("selected")
-
-    let notices = [document.createElement("h1"), document.createElement("p"), document.createElement("p"), document.createElement("p"), document.createElement("p")]
-
-    notices[0].innerHTML = "Direito Eleitoral";
-    notices[1].innerHTML = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, id sapiente laudantium quo iusto maxime facere! Sapiente sunt facilis consectetur sequi, dolorum molestiae illum pariatur cumque. Corrupti saepe distinctio modi.";
-    notices[2].innerHTML = "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro minima similique tempora. Totam, similique doloremque? Tenetur, quibusdam ratione! Dolore nesciunt iste quos labore maxime sequi omnis blanditiis hic iusto laborum!";
-    notices[3].innerHTML = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint repellat nobis adipisci earum recusandae iure possimus porro. Possimus quod illum voluptates, vel minima dolore, error quia dolor enim necessitatibus ipsa?";
-    notices[4].innerHTML = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero omnis maxime labore libero autem aperiam necessitatibus alias expedita blanditiis nemo voluptas nisi doloribus atque, esse saepe repellendus quae quia molestias.";
-
-
-    notices.map((notice) => {
-        text.appendChild(notice);
-    })
+    criaDescricao("Direito Eleitoral");
 })
 
 
 trabalho.addEventListener("click", (e) => {
     text.innerHTML = "";
 
-    if (public.classList.contains("selected")) public.classList.remove("selected")
+    if (publico.classList.contains("selected")) publico.classList.remove("selected")
     if (eleitoral.classList.contains("selected")) eleitoral.classList.remove("selected")
     if (penal.classList.contains("selected")) penal.classList.remove("selected")
 
     trabalho.classList.add("selected")
 
-    let notices = [document.createElement("h1"), document.createElement("p"), document.createElement("p"), document.createElement("p"), document.createElement("p")]
-
-    notices[0].innerHTML = "Direito Civil e Processual Civil";
-    notices[1].innerHTML = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, id sapiente laudantium quo iusto maxime facere! Sapiente sunt facilis consectetur sequi, dolorum molestiae illum pariatur cumque. Corrupti saepe distinctio modi.";
-    notices[2].innerHTML = "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro minima similique tempora. Totam, similique doloremque? Tenetur, quibusdam ratione! Dolore nesciunt iste quos labore maxime sequi omnis blanditiis hic iusto laborum!";
-    notices[3].innerHTML = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint repellat nobis adipisci earum recusandae iure possimus porro. Possimus quod illum voluptates, vel minima dolore, error quia dolor enim necessitatibus ipsa?";
-    notices[4].innerHTML = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero omnis maxime labore libero autem aperiam necessitatibus alias expedita blanditiis nemo voluptas nisi doloribus atque, esse saepe repellendus quae quia molestias.";
-
-
-    notices.map((notice) => {
-        text.appendChild(notice);
-    })
+    criaDescricao("Direito Civil");
 })
 
 
 penal.addEventListener("click", (e) => {
     text.innerHTML = "";
 
-    if (public.classList.contains("selected")) public.classList.remove("selected")
+    if (publico.classList.contains("selected")) publico.classList.remove("selected")
     if (eleitoral.classList.contains("selected")) eleitoral.classList.remove("selected")
     if (trabalho.classList.contains("selected")) trabalho.classList.remove("selected")
 
     penal.classList.add("selected")
 
-    let notices = [document.createElement("h1"), document.createElement("p"), document.createElement("p"), document.createElement("p"), document.createElement("p")]
-
-    notices[0].innerHTML = "Direito Empresarial Trabalhista";
-    notices[1].innerHTML = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, id sapiente laudantium quo iusto maxime facere! Sapiente sunt facilis consectetur sequi, dolorum molestiae illum pariatur cumque. Corrupti saepe distinctio modi.";
-    notices[2].innerHTML = "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro minima similique tempora. Totam, similique doloremque? Tenetur, quibusdam ratione! Dolore nesciunt iste quos labore maxime sequi omnis blanditiis hic iusto laborum!";
-    notices[3].innerHTML = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint repellat nobis adipisci earum recusandae iure possimus porro. Possimus quod illum voluptates, vel minima dolore, error quia dolor enim necessitatibus ipsa?";
-    notices[4].innerHTML = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero omnis maxime labore libero autem aperiam necessitatibus alias expedita blanditiis nemo voluptas nisi doloribus atque, esse saepe repellendus quae quia molestias.";
-
-
-    notices.map((notice) => {
-        text.appendChild(notice);
-    })
+    criaDescricao("Direito Trabalhista");
 })
 
 menu.addEventListener("click", (e) => {
@@ -145,7 +103,7 @@ exit.addEventListener("click", (e) => {
     logo.classList.add("active");
 })
 
-for (link of links) {
+for (let link of links) {
     link.addEventListener("click", (e) => {
         menuList.classList.remove("active");
         menu.classList.remove("remove");

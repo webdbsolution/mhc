@@ -78,7 +78,7 @@
                     <p class="dPublico">Direito Público</p>
                     <p class="dEleitoral">Direito Eleitoral</p>
                     <p class="dTrabalho">Direito Civil</p>
-                    <p class="dPenal">Direito Trabalhista</p>
+                    <p class="dPenal" style="display: none;">Direito Trabalhista</p>
                 </div>
                 <div class="text">
                 
@@ -97,21 +97,30 @@
                 <div class="owl-carousel owl-theme" id="team">
                     <div class="item">
                         <div class="pessoa">
-                            <a href="#team">
-                                <img src="img/mateus.jpg" alt="Mateus">
+                            <a href="pessoa.html?id=0" data-fancybox data-options='{"type" : "iframe", "iframe" : {"preload" : false, "css" : {"width" : "95%"}}}'>
+                                <div style="background-image: url(img/mateus.jpg);" class="foto"></div>
                                 <h1>Mateus Henrique de Carvalho</h1>
-                                <p>mateusdecarvalho@mhcadvogados.com</p>
-                                <p>(51) 99204-4497</p>
+                                <p>Advogado</p>
+                                <p>OAB/RS 78.524</p>
                             </a>
                         </div>
                     </div>
                     <div class="item">
                         <div class="pessoa">
-                            <a href="#team">
-                                <img src="img/Camada 15.png" alt="Jamile">
+                            <a href="pessoa.html?id=1" data-fancybox data-options='{"type" : "iframe", "iframe" : {"preload" : false, "css" : {"width" : "95%"}}}'>
+                                <div style="background-image: url(img/jamile.jpeg);" class="foto"></div>
                                 <h1>Jamile Busatto Chedid</h1>
-                                <p>jamilechedid@mhcadvogados.com</p>
-                                <p>(51) 98227-5353</p>
+                                <p>Advogada</p>
+                                <p>OAB/RS 78.111B</p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="pessoa">
+                            <a href="pessoa.html?id=2" data-fancybox data-options='{"type" : "iframe", "iframe" : {"preload" : false, "css" : {"width" : "95%"}}}'>
+                                <div style="background-image: url(img/dayana.jpeg);" class="foto"></div>
+                                <h1>Dayana Zwicker</h1>
+                                <p>Bacharel em Direito</p>
                             </a>
                         </div>
                     </div>
@@ -166,7 +175,13 @@
     <footer id="info">
         <div class="loc">
             <div class="onde">
-                <h1>Onde Estamos</h1>
+                <h1>Fale Conosco:</h1>
+                <form id="form" action="index.html" method="post">
+                    <div class="campo"><input type="text" name="nome" id="nome" placeholder="Nome:"></div>
+                    <div class="campo"><input type="mail" name="email" id="email" placeholder="Email:"></div>
+                    <div class="campo"><textarea name="msg" id="msg" placeholder="Mensagem:"></textarea></div>
+                    <input class="input-btn" type="submit" value="Enviar">
+                </form>
                 <img src="img/redes.png" alt="redes" class="redes">
             </div>
             <div class="local">
@@ -189,7 +204,8 @@
             </div>
         </div>
     </footer>
-    <script src="js/index.js"></script>
+    <script src="js/envia.js"></script>
+    <script src="js/index.js" type="module"></script>
 </body>
 
 </html>

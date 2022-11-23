@@ -1,0 +1,26 @@
+<link rel="stylesheet" href="styles/pessoa.css">
+
+<script type="module">
+    import { pessoas } from "./mocks/mocks.js"
+
+    let container = document.querySelector(".container")
+
+    const urlParams = new URLSearchParams(window.location.search);
+    const id = urlParams.get("id")
+
+    const pessoa = pessoas[id]
+
+
+    container.innerHTML = `
+        <div>
+            <h1>${pessoa["nome"]}</h1>
+            <h3>${pessoa["cargo"]} ${pessoa['oab'] ? `- ${pessoa["oab"]}` : ""} </h3>
+            <p>${pessoa["texto"]}</p>
+        </div>
+        <img src="${pessoa["imagem"]}" alt="${pessoa["nome"]}" />
+    `
+</script>
+
+<div class="container">
+
+</div>

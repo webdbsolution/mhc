@@ -172,6 +172,15 @@ a {
   padding-bottom: 8%;
 }
 
+.foto {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: auto;
+  width: 100%;
+  height: 33vw;
+}
+
 .people div h1 {
   font-size: 1em;
   border: none;
@@ -329,6 +338,7 @@ footer {
   .direitos {
     display: flex;
     width: 100%;
+    justify-content: center;
   }
 
   .direitos p {
@@ -349,6 +359,10 @@ footer {
 
   .we p {
     padding-inline: 10%;
+  }
+
+  .foto {
+    height: 68vw;
   }
 
   .loc div h1 {
@@ -399,6 +413,50 @@ footer {
   .icon {
     width: 12%;
   }
+
+  input, textarea {
+    background-color: transparent !important;
+    color: #fff;
+    border: 1px solid #ca9811;
+    padding: 3%;
+    width: 80%;
+    margin: 0.6%;
+    margin-inline: 4.5%;
+  }
+
+  input::placeholder, textarea::placeholder {
+    color: #fff !important;
+  }
+  
+  input::-webkit-input-placeholder, textarea::-webkit-textarea-placeholder {
+    /* Chrome */
+    color: #fff;
+  }
+  
+  input:-ms-input-placeholder, textarea:-ms-textarea-placeholder {
+    /* IE 10+ */
+    color: #fff;
+  }
+  
+  input::-moz-placeholder, textarea::-moz-placeholder {
+    /* Firefox 19+ */
+    color: #fff;
+    opacity: 1;
+  }
+  
+  input:-moz-placeholder, textarea:-moz-placeholder {
+    /* Firefox 4 - 18 */
+    color: #fff;
+    opacity: 1;
+  }
+
+  .input-btn {
+    background-color: #ca9811 !important;
+    cursor: pointer;
+    width: 86.5%;
+    margin-bottom: 5%;
+  }
+
 }
 
 @media (min-width: 950px) {
@@ -549,6 +607,49 @@ footer {
 
   .icon {
     width: 3%;
+  }
+
+  input, textarea {
+    background-color: transparent !important;
+    color: #fff;
+    border: 1px solid #ca9811;
+    padding: 3%;
+    width: 90%;
+    margin: 0.6%;
+    margin-left: 9%;
+  }
+
+  input::placeholder, textarea::placeholder {
+    color: #fff !important;
+  }
+  
+  input::-webkit-input-placeholder, textarea::-webkit-textarea-placeholder {
+    /* Chrome */
+    color: #fff;
+  }
+  
+  input:-ms-input-placeholder, textarea:-ms-textarea-placeholder {
+    /* IE 10+ */
+    color: #fff;
+  }
+  
+  input::-moz-placeholder, textarea::-moz-placeholder {
+    /* Firefox 19+ */
+    color: #fff;
+    opacity: 1;
+  }
+  
+  input:-moz-placeholder, textarea:-moz-placeholder {
+    /* Firefox 4 - 18 */
+    color: #fff;
+    opacity: 1;
+  }
+
+
+  .input-btn {
+    background-color: #ca9811 !important;
+    cursor: pointer;
+    width: 96.5%;
   }
 }
 
