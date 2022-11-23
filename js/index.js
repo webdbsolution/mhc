@@ -152,11 +152,11 @@ $('#notices').owlCarousel({
     }
 })
 
-
 $(function () {
     var nav = $('.menu-scroll');
 
     $(window).scroll(function () {
+
         if ($(this).scrollTop() > 150) {
             nav.removeClass("remove");
             $('body').css('padding-top', 70);
@@ -166,3 +166,4 @@ $(function () {
         }
     });
 });
+
