@@ -187,6 +187,16 @@ a {
   height: 33vw;
 }
 
+.redes-contato {
+  margin-top: 2%;
+  display: flex;
+  justify-content: center;
+}
+
+.redes-contato img {
+  width: 60% !important;
+}
+
 .people div h1 {
   font-size: 1em;
   border: none;
