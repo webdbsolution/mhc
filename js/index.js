@@ -13,12 +13,14 @@ const exit = document.querySelector(".exit");
 
 const links = document.querySelectorAll(".link");
 
+const menuScroll = document.querySelector(".menu-scroll")
+
 function criaDescricao(titulo) {
     let notices = [document.createElement("h1"), document.createElement("p")]
 
     notices[0].innerHTML = areas[areas.findIndex(u => u.titulo == titulo)].titulo;
     notices[1].innerHTML = areas[areas.findIndex(u => u.titulo == titulo)].conteudo;
-    
+
     notices.map((notice) => {
         text.appendChild(notice);
     })
@@ -149,3 +151,18 @@ $('#notices').owlCarousel({
         }
     }
 })
+
+
+$(function () {
+    var nav = $('.menu-scroll');
+
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 150) {
+            nav.removeClass("remove");
+            $('body').css('padding-top', 70);
+        } else {
+            nav.addClass("remove");
+            $('body').css('padding-top', 0);
+        }
+    });
+});

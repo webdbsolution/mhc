@@ -59,6 +59,12 @@ a {
   padding: 3% 0 0 0;
 }
 
+.link {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.74);
+  cursor: pointer;
+}
+
 .exit {
   cursor: pointer;
 }
@@ -294,6 +300,10 @@ footer {
     padding: 6%;
   }
 
+  .menu-scroll {
+    display: none;
+  }
+
   h2 {
     font-size: 1.3em;
     text-align: center;
@@ -414,7 +424,8 @@ footer {
     width: 12%;
   }
 
-  input, textarea {
+  input,
+  textarea {
     background-color: transparent !important;
     color: #fff;
     border: 1px solid #ca9811;
@@ -424,30 +435,35 @@ footer {
     margin-inline: 4.5%;
   }
 
-  input::placeholder, textarea::placeholder {
+  input::placeholder,
+  textarea::placeholder {
     color: #fff !important;
   }
-  
-  input::-webkit-input-placeholder, textarea::-webkit-textarea-placeholder {
+
+  input::-webkit-input-placeholder,
+  textarea::-webkit-textarea-placeholder {
     /* Chrome */
     color: #fff;
   }
-  
-  input:-ms-input-placeholder, textarea:-ms-textarea-placeholder {
+
+  input:-ms-input-placeholder,
+  textarea:-ms-textarea-placeholder {
     /* IE 10+ */
     color: #fff;
   }
-  
-  input::-moz-placeholder, textarea::-moz-placeholder {
+
+  input::-moz-placeholder,
+  textarea::-moz-placeholder {
     /* Firefox 19+ */
     color: #fff;
     opacity: 1;
   }
-  
-  input:-moz-placeholder, textarea:-moz-placeholder {
+
+  input:-moz-placeholder,
+  textarea:-moz-placeholder {
     /* Firefox 4 - 18 */
     color: #fff;
-    opacity: 1;
+    opacity: 1;
   }
 
   .input-btn {
@@ -477,6 +493,18 @@ footer {
   p,
   a {
     font-weight: 300;
+  }
+
+  .menu-scroll {
+    width: 100%;
+    position: fixed;
+    top: 0px;
+    height: 10%;
+    background-color: #203745;
+    display: flex;
+    justify-content: space-evenly;
+    z-index: 99999999;
+    transition: 0.4s all;
   }
 
   .exit {
@@ -609,7 +637,8 @@ footer {
     width: 3%;
   }
 
-  input, textarea {
+  input,
+  textarea {
     background-color: transparent !important;
     color: #fff;
     border: 1px solid #ca9811;
@@ -619,30 +648,35 @@ footer {
     margin-left: 9%;
   }
 
-  input::placeholder, textarea::placeholder {
+  input::placeholder,
+  textarea::placeholder {
     color: #fff !important;
   }
-  
-  input::-webkit-input-placeholder, textarea::-webkit-textarea-placeholder {
+
+  input::-webkit-input-placeholder,
+  textarea::-webkit-textarea-placeholder {
     /* Chrome */
     color: #fff;
   }
-  
-  input:-ms-input-placeholder, textarea:-ms-textarea-placeholder {
+
+  input:-ms-input-placeholder,
+  textarea:-ms-textarea-placeholder {
     /* IE 10+ */
     color: #fff;
   }
-  
-  input::-moz-placeholder, textarea::-moz-placeholder {
+
+  input::-moz-placeholder,
+  textarea::-moz-placeholder {
     /* Firefox 19+ */
     color: #fff;
     opacity: 1;
   }
-  
-  input:-moz-placeholder, textarea:-moz-placeholder {
+
+  input:-moz-placeholder,
+  textarea:-moz-placeholder {
     /* Firefox 4 - 18 */
     color: #fff;
-    opacity: 1;
+    opacity: 1;
   }
 
 
@@ -653,36 +687,38 @@ footer {
   }
 }
 
-#notices .owl-dots{
-	display: none !important;
+#notices .owl-dots {
+  display: none !important;
 }
 
-#notices .owl-prev{
-	float: left;
-	position: absolute;
-	background-image:url(../img/slices/left_.png);
-	margin-left: -60%;
+#notices .owl-prev {
+  float: left;
+  position: absolute;
+  background-image: url(../img/slices/left_.png);
+  margin-left: -60%;
 }
 
-#notices .owl-next{
-	float: right;
-	position: relative;
-	background-image:url(../img/slices/right_.png);
-	margin-right: -10%;
+#notices .owl-next {
+  float: right;
+  position: relative;
+  background-image: url(../img/slices/right_.png);
+  margin-right: -10%;
 }
 
-#notices .owl-next, #notices .owl-prev{
-	width: 50px;
-	height: 80px;
-	outline:none !important;
-	margin-top: -300px;
-	background-size:contain;
-	background-position:center;
-	background-repeat:no-repeat;
-	z-index: 3;
-	background-color:transparent;
+#notices .owl-next,
+#notices .owl-prev {
+  width: 50px;
+  height: 80px;
+  outline: none !important;
+  margin-top: -300px;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: 3;
+  background-color: transparent;
 }
 
-#notices .owl-prev span, #notices .owl-next span{
-	display: none;
+#notices .owl-prev span,
+#notices .owl-next span {
+  display: none;
 }
