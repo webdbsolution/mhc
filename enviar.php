@@ -117,6 +117,6 @@ $now = date('d/m/Y H:i:s (T)');
 		alert('Erro ao enviar mensagem. Verifique a validade de seu email.');
 	}
 
-	redirect('index.html');
+	redirect('https://webdbsolution.github.io/mhc/');
 
 ?>
