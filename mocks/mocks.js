@@ -31,7 +31,7 @@ export const pessoas = [
         cargo: "ADVOGADA",
         oab: "OAB/RS 78.111B",
         texto: "Bacharel em Direito pela Pontifícia Universidade Católica do Rio Grande do Sul - PUC/RS. Especialista em Direito Público – UNIVALI. Especialista em Direito Material e Processual Civil - CESUSC. Especialista em Direito Empresarial Trabalhista - UNP. Ex – Assessora Jurídica da Procuradoria Municipal Setorial junto à Secretaria Municipal de Saúde de Porto Alegre/RS. Ex – Juíza Leiga no 2º Juizado Especial Cível da Comarca de Porto Alegre/RS. Ex – Juíza Leiga no Juizado Especial Cível da Comarca de Florianópolis/SC.",
-        imagem: "../img/jamile.jpeg"
+        imagem: "img/jamile.jpeg"
     },
     {
         id: 2,
@@ -39,6 +39,6 @@ export const pessoas = [
         cargo: "Bacharel em Direito",
         oab: null,
         texto: "Bacharel em Direito pela Universidade do Oeste de Santa Catarina - UNOESC. Especialista em Direito Material e Processual Civil - CESUSC. Assessora Jurídica no Tribunal de Contas do Estado de Santa Catarina. Ex – Assessora Especial do Gabinete da Presidência do Tribunal de Justiça do Estado de Santa Catarina. Ex- Secretária Executiva do Diretório Estadual do Partido Social Democrático. Ex- Secretária Executiva do Gabinete da Presidência da Assembleia Legislativa do Estado de Santa Catarina. Ex – Assessora Especial do Gabinete da Presidência da Assembleia Legislativa do Estado de Santa Catarina. Ex – Assessora Jurídica no Tribunal de Justiça do Estado de Santa Catarina. Ex Juíza Leiga no Juizado Especial Cível da Comarca de Florianópolis. Ex – Assessora Jurídica no Fórum da Comarca de Chapecó/SC.",
-        imagem: "../img/dayana.jpeg"
+        imagem: "img/dayana.jpeg"
     },
 ]
