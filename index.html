@@ -60,19 +60,19 @@
         <img src="img/Forma 5.png" alt="forma1" class="forma1">
         <h2>Um escritório de advocacia com tradição e espírito inovador</h2>
         <p>
-            O Escritório de Advocacia MHC Advogados é formado por um 
-            núcleo de profissionais com intensa  experiência na 
+            O Escritório de Advocacia MHC Advogados é formado por um
+            núcleo de profissionais com intensa experiência na
             administração pública e que, mediante parcerias
-            estratégicas, atua em conjunto desde  2014, nos ramos de 
-            Direito Público, Eleitoral, Material e Processual Civil, nas 
-            esferas  administrativa e judicial. 
+            estratégicas, atua em conjunto desde 2014, nos ramos de
+            Direito Público, Eleitoral, Material e Processual Civil, nas
+            esferas administrativa e judicial.
             <br> <br>
-            Incorporando os recursos tecnológicos mais avançados em sua     
-            rotina, o Escritório possui expertise  no gerenciamento de
+            Incorporando os recursos tecnológicos mais avançados em sua
+            rotina, o Escritório possui expertise no gerenciamento de
             questões jurídicas complexas, tendo por objetivo o
-            atendimento personalizado e  exclusivo aos seus clientes, com 
-            orientação segura à luz do ordenamento jurídico, através de 
-            uma relação de confiança e transparência. 
+            atendimento personalizado e exclusivo aos seus clientes, com
+            orientação segura à luz do ordenamento jurídico, através de
+            uma relação de confiança e transparência.
 
         </p>
         <img src="img/Forma 5.png" alt="forma2" class="forma2">
@@ -88,20 +88,55 @@
                     <p class="dPenal" style="display: none;">Direito Trabalhista</p>
                 </div>
                 <div class="text">
-                
+
                 </div>
             </div>
         </div>
     </div>
     <div class="we" id="equipe">
-        <h1>Nossa Equipe</h1>
+        <h1>Profissional</h1>
         <!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
             magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
             commodo consequat. Duis aute irure dolor in.
         </p> -->
         <div class="partners">
             <div class="people">
-                <div class="owl-carousel owl-theme" id="team">
+
+
+                <script type="module">
+                    import { pessoas } from "./mocks/mocks.js"
+
+                    let container = document.querySelector(".container")
+
+                    const urlParams = new URLSearchParams(window.location.search);
+                    const id = 0;
+
+                    const pessoa = pessoas[id]
+
+
+                    container.innerHTML = `
+                        <img src="${pessoa["imagem"]}" alt="${pessoa["nome"]}" />
+                        <div>
+                            <h1>${pessoa["nome"]}</h1>
+                            <h1>${pessoa["cargo"]} ${pessoa['oab'] ? `- ${pessoa["oab"]}` : ""} </h1>
+                            <p>${pessoa["texto"]}</p>
+                        </div>
+                    `
+                </script>
+
+                <div class="container">
+
+                </div>
+                <div class="redes-contato-unico">
+                    <a href="mailto:mateusdecarvalho@mhcadvogados.com"><img src="img/mail-icon.png" alt="mail-icon"
+                            target="_blank"></a>
+                    <a href="https://wa.me/5551992044497?text=Ol%C3%A1%2C%20estou%20entrando%20em%20contato%20atrav%C3%A9s%20do%20site%20MHC%20Advogados%2C%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es."
+                        target="_blank"><img src="img/whats-icon.png" alt="whats-icon"></a>
+                    <a href="https://www.linkedin.com/in/mateus-henrique-de-carvalho-485084254/" target="_blank"><img
+                            src="img/linkedin.png" alt="linkedin"></a>
+                </div>
+
+                <!-- <div class="owl-carousel owl-theme" id="team">
                     <div class="item">
                         <div class="pessoa">
                             <a href="pessoa.html?id=0" data-fancybox data-options='{"type" : "iframe", "iframe" : {"preload" : false, "css" : {"width" : "95%"}}}'>
@@ -146,7 +181,7 @@
                             </a>
                         </div>
                     </div>
-                </div>
+                </div> -->
             </div>
         </div>
     </div>
