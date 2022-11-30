@@ -424,6 +424,10 @@ footer {
     font-size: 0.8em;
   }
 
+  .services {
+    background-attachment: unset;
+  }
+
   .onde {
     width: 90%;
     margin: auto;
