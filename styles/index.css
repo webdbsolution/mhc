@@ -540,6 +540,10 @@ footer {
   .redes-contato-unico a img {
     width: 70%;
   }
+
+  .foto-mateus {
+    margin-bottom: 5%;
+  }
 }
 
 @media (min-width: 950px) {
