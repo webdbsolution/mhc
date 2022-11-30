@@ -286,7 +286,7 @@ a {
 footer {
   background-color: #203745;
   color: #fff;
-  margin-top: 10vh;
+  /* margin-top: 10vh; */
   padding: 10% 0;
 }
 
