@@ -35,7 +35,7 @@ a {
 }
 
 .loguinho {
-  text-align: center;
+  /* text-align: center; */
 }
 
 .logo {
@@ -98,9 +98,7 @@ a {
 .sombra {
   position: absolute;
   z-index: -1;
-  background-color: rgba(0, 0, 0, 0.229);
-  height: 93.5%;
-  width: 100%;
+  width: 70%;
 }
 
 .about {
